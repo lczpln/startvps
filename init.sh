@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 apt update
 apt -y install screen
 apt -y install xfce4
