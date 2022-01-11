@@ -1,12 +1,13 @@
 #!/bin/bash
-apt update
-apt -y install screen
-apt -y install xfce4
-apt -y install firefox
-wget https://hitleap.com/viewer/download?platform=Linux && tar -xf download?platform=Linux
-./HitLeap-Viewer.desktop &
-apt install tightvncserver
-tightvncserver :1
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip && unzip ngrok-stable-linux-amd64.zip
-./ngrok authtoken YOUR_NGROK_TOKEN
-screen ./ngrok tcp 5901
+sudo apt-get update -y
+sudo apt-get upgrade -y
+apt apt-get install xfce4 -y
+#sudo apt-get install ubuntu-desktop
+sudo adduser lczpln
+sudo usermod -aG sudo,adm lczpln
+sudo apt-get update -y
+wget https://download.nomachine.com/ download/7.7/Linux/nomachine_7.7.4_1_amd64.deb
+sudo dpkg -i nomachine_7.7.4_1_amd64.deb
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo reboot
