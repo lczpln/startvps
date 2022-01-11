@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt update -y
 sudo apt upgrade -y
-sudo apt install ubuntu-desktop -y
+sudo apt install xfce4 -y
 sudo adduser lczpln
 sudo usermod -aG sudo,adm lczpln
 sudo apt update -y
